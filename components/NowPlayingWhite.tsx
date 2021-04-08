@@ -1,6 +1,6 @@
 import React from "react";
 import ReadmeImg from "./ReadmeImg";
-import Text from "./Text";
+import Text from "./TextWhite";
 
 export interface Props {
   cover?: string;

@@ -1,7 +1,7 @@
 import { NowRequest, NowResponse } from "@vercel/node";
 import { renderToString } from "react-dom/server";
 import { decode } from "querystring";
-import { Player } from "../components/NowPlaying";
+import { Player } from "../components/NowPlayingWhite";
 import { nowPlaying } from "../utils/spotify";
 
 export default async function (req: NowRequest, res: NowResponse) {

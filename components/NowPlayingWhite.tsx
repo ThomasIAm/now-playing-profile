@@ -45,7 +45,7 @@ export const Player: React.FC<Props> = ({
               width: 100%;
               height: 4px;
               margin: -1px;
-              border: 1px solid #e1e4e8;
+              border: 1px solid rgba(255,255,255,0.2);
               border-radius: 4px;
               overflow: hidden;
               padding: 2px;
@@ -59,7 +59,7 @@ export const Player: React.FC<Props> = ({
               width: 100%;
               height: 6px;
               transform-origin: left center;
-              background-color: #e1e4e8;
+              background-color: #fff;
               animation: progress ${duration}ms linear;
               animation-delay: -${progress}ms;
             }
@@ -142,11 +142,13 @@ export const Player: React.FC<Props> = ({
             flexDirection: "column",
             marginTop: -4,
             marginLeft: 8,
+            maxWidth: 195,
           }}
         >
           <Text id="track" weight="bold">
             {`${track ?? ""} `.trim()}
           </Text>
+          {/* <img src="/spotify.png" width="20px"></img> */}
           <Text id="artist" color={!track ? "gray" : undefined}>
             {artist || "Nothing playing..."}
           </Text>

@@ -3,6 +3,7 @@ import React from "react";
 const sizes = {
   default: 14,
   small: 12,
+  medium: 16,
 };
 
 const colors = {
@@ -10,12 +11,14 @@ const colors = {
   "gray-light": "#e1e4e8",
   gray: "#586069",
   "gray-dark": "#24292e",
+  white: "#fff",
 };
 
 const families = {
   default:
     "-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji",
   mono: "SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace",
+  hydejack: "Noto Sans,Helvetica,Arial,sans-serif",
 };
 
 const weights = {
@@ -26,8 +29,8 @@ const weights = {
 const Text: React.FC<any> = ({
   children = "",
   weight = "default",
-  family = "default",
-  color = "gray-light",
+  family = "hydejack",
+  color = "white",
   size = "default",
   ...props
 }) => {
@@ -40,6 +43,8 @@ const Text: React.FC<any> = ({
         fontFamily: families[family],
         color: colors[color],
         fontWeight: weights[weight],
+        overflow: "hidden",
+        textOverflow: "ellipsis",
       }}
       {...props}
     >

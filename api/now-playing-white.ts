@@ -11,6 +11,8 @@ export default async function (req: NowRequest, res: NowResponse) {
     progress_ms: progress = 0,
   } = await nowPlaying();
 
+  if (isPlaying !== false) {
+
   const params = decode(req.url.split("?")[1]) as any;
 
   if (params && typeof params.open !== "undefined") {
@@ -41,4 +43,5 @@ export default async function (req: NowRequest, res: NowResponse) {
     Player({ cover: coverImg, artist, track, isPlaying, progress, duration })
   );
   return res.status(200).send(text);
+  }
 }

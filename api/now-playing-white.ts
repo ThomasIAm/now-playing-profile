@@ -43,5 +43,6 @@ export default async function (req: NowRequest, res: NowResponse) {
     Player({ cover: coverImg, artist, track, isPlaying, progress, duration })
   );
   return res.status(200).send(text);
-  }
+  } else {
+    return res.status(200).send();
 }

@@ -27,7 +27,7 @@ const Text: React.FC<any> = ({
   children = "",
   weight = "default",
   family = "default",
-  color = "gray",
+  color = "gray-light",
   size = "default",
   ...props
 }) => {

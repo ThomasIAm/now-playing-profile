@@ -44,5 +44,6 @@ export default async function (req: NowRequest, res: NowResponse) {
   );
   return res.status(200).send(text);
   } else {
-    return res.status(200).send();
+    return res.status(200).send(null);
+  }
 }

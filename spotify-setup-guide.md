@@ -6,12 +6,12 @@ Guide by [JoshLmao](https://github.com/JoshLmao)
 
 Setup with a click of a button 😉
 
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/joshlmao/now-playing-profile)
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/thomasiam/now-playing-profile)
 
 1. Sign up or Sign in to use [Vercel](https://vercel.com/) for hosting the repo. You could use another service like [Heroku](https://heroku.com/) but this guide will use Vercel
-2. Fork [natemoo-re's original repo](https://github.com/natemoo-re/natemoo-re), or [joshlmao's now-playing-profile repo](https://github.com/JoshLmao/now-playing-profile) which is just a skeleton repo that contains the Spotify Now Playing specific features
+2. Fork [this repo](https://github.com/ThomasIAm/now-playing-profile), [natemoo-re's original repo](https://github.com/natemoo-re/natemoo-re), or [joshlmao's now-playing-profile repo](https://github.com/JoshLmao/now-playing-profile) which is just a skeleton repo that contains the Spotify Now Playing specific features
 3. Go to your Vercel dashboard and select Import Project
-4. Paste the Git url of your forked repo. For example "https://github.com/JoshLmao/now-playing-profile"
+4. Paste the Git url of your forked repo. For example "https://github.com/ThomasIAm/now-playing-profile"
    <img src="https://i.imgur.com/fkiH4QL.png" height="250">
 
 5. Leave the remaining settings for now and click 'Deploy'

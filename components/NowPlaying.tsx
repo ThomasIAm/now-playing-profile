@@ -23,7 +23,7 @@ export const Player: React.FC<Props> = ({
     <ReadmeImg width="256" height="64">
       <style>
         {`
-            .paused { 
+            .paused {
               animation-play-state: paused !important;
               background: #e1e4e8 !important;
             }
